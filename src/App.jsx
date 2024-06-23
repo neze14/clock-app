@@ -92,15 +92,12 @@ const App = () => {
   }, [])
 
   const styles = {
-    'day': 'h-screen w-full bg-cover bg-no-repeat bg-center bg-day-mobile sm:bg-day-tablet md:bg-day-desktop relative overflow-hidden',
+    'day': 'h-screen w-full bg-cover bg-no-repeat bg-center bg-day-mobile sm:bg-day-tablet md:bg-day-desktop overflow-hidden bg-stone-400 bg-blend-hard-light',
     'night': 'h-screen w-full bg-cover bg-no-repeat bg-center bg-night-mobile sm:bg-night-tablet md:bg-night-desktop overflow-hidden',
   }
 
   return (
     <main className={`${styles[backgroundImage]}`}>
-      {backgroundImage === 'day' &&
-        <div className='absolute top-0 left-0 h-full w-full bg-black opacity-15' />
-      }
       <div className='flex flex-col justify-between h-screen w-full overflow-none'>
         {showMore === false &&
           <div className='w-full h-fit flex gap-3 py-10 ml-[10%] md:w-[90%] relative'>
