@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+
+  color: white;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+@keyframes spin {
+  to {
+      transform: rotate(360deg);
+  }
+}
+.animate-spin {
+  animation: spin 20s linear infinite;
+}
