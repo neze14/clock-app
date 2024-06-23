@@ -74,11 +74,11 @@ const App = () => {
 
   async function getLocation() {
     try {
-      const response = await fetch('http://ip-api.com/json');
+      const response = await fetch('https://ipapi.co/json/');
       const loc = await response.json();
 
       setCity(loc?.city);
-      setCountry(loc?.country);
+      setCountry(loc?.country_name);
     } catch (error) {
       console.log(error);
     }
