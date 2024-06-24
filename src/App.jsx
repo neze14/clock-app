@@ -92,7 +92,7 @@ const App = () => {
   }, [])
 
   const styles = {
-    'day': 'h-screen w-full bg-cover bg-no-repeat bg-center bg-day-mobile sm:bg-day-tablet md:bg-day-desktop overflow-hidden bg-stone-400 bg-blend-hard-light',
+    'day': 'h-screen w-full bg-cover bg-no-repeat bg-center bg-day-mobile sm:bg-day-tablet md:bg-day-desktop overflow-hidden bg-stone-200 bg-blend-darken',
     'night': 'h-screen w-full bg-cover bg-no-repeat bg-center bg-night-mobile sm:bg-night-tablet md:bg-night-desktop overflow-hidden',
   }
 
