@@ -46,11 +46,11 @@ const App = () => {
 
   async function randomQuote() {
     try {
-      const response = await fetch('https://api.quotable.io/random')
+      const response = await fetch('https://api.quotable.io/quotes/random')
       const quote = await response.json()
-
-      setQuote(quote?.content);
-      setAuthor(quote?.author)
+      
+      setQuote(quote?.[0]?.content);
+      setAuthor(quote?.[0]?.author)
     } catch (error) {
       console.log(error)
     }
